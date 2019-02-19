@@ -136,5 +136,6 @@ endif()
 configure_file("libprotobuf-mutator.pc.in" "libprotobuf-mutator.pc" @ONLY)
 install(FILES "${CMAKE_BINARY_DIR}/libprotobuf-mutator.pc"
   DESTINATION ${PKG_CONFIG_PATH})
+message("DEBUG ${PKG_CONFIG_PATH}")
 install(DIRECTORY ./port ./src DESTINATION include/libprotobuf-mutator
   FILES_MATCHING PATTERN "*.h")
